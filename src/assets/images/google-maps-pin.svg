@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="34px" viewBox="0 0 25 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>ic_place</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Finance-Saas-Landingpage" transform="translate(-843.000000, -2066.000000)">
+            <g id="Group-8-Copy-2" transform="translate(835.000000, 1714.000000)">
+                <g id="Group-6-Copy" transform="translate(0.000000, 349.000000)">
+                    <g id="ic_place">
+                        <rect id="Rectangle" opacity="0.100000001" x="0" y="0" width="40" height="40" rx="10"></rect>
+                        <g id="Group-12" transform="translate(9.000000, 4.000000)">
+                            <path d="M11.5,3 C16.1790237,3 20,6.85058565 20,11.5891391 C20,14.3168383 18.25348,18.2971077 15.2991345,22.753333 C14.1956044,24.4178569 12.9984308,26.0391087 11.7881254,27.5537652 L11.5,27.911 L11.5000241,16 C13.9813273,16 16,13.981349 16,11.5000241 C16,9.01869925 13.9813273,7 11.5000241,7 L11.5000241,7 L11.5,3 Z" id="Combined-Shape" fill="#BABCF4" fill-rule="nonzero"></path>
+                            <path d="M11.5000241,17 C9.01867266,17 7,14.9813007 7,12.4999759 C7,10.018651 9.01872089,8 11.5000241,8 C13.9813273,8 16,10.0186993 16,12.5000241 C16,14.981349 13.9813273,17 11.5000241,17 Z" id="Path" stroke="#FFFFFF" stroke-width="2"></path>
+                            <path d="M11.5,0 C5.15886575,0 0,5.19888134 0,11.5891391 C0,19.5196488 10.2913734,31.1621005 10.7295378,31.6538511 C11.141096,32.1157891 11.8596483,32.1149766 12.2704622,31.6538511 C12.7086266,31.1621005 23,19.5196488 23,11.5891391 C23,5.19888134 17.8410722,0 11.5,0 Z M11.5000241,16 C9.01867266,16 7,13.9813007 7,11.4999759 C7,9.01865102 9.01872089,7 11.5000241,7 C13.9813273,7 16,9.01869925 16,11.5000241 C16,13.981349 13.9813273,16 11.5000241,16 Z" id="Shape-Copy-3" stroke="#757AE9" stroke-width="2"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

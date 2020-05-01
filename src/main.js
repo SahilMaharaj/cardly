@@ -1,0 +1,18 @@
+import DefaultLayout from '~/layouts/Default.vue'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import VueScrollTo from 'vue-scrollto'
+
+export default function (Vue, { router, head, isClient }) {
+  Vue.use(VueScrollTo, {
+    duration: 1500,
+    easing: "ease-in-out"
+  })
+  Vue.component('Layout', DefaultLayout)
+  Vue.use(BootstrapVue)
+  head.link.push ({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap'
+  })
+}
