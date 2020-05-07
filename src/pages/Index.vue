@@ -6,7 +6,7 @@
           <h2>Powering Secure Payments and Global Finance.</h2>
           <p>Cardly is the best software platform to make secure and fast payments to just about anyone that has a smartphone.</p>
           <div class="hero-btn">
-            <button>Discover Features</button>
+            <a @click.prevent="$scrollTo('#expenses')"><button>Discover Features</button></a>
             <p>* No credit card required</p>
           </div>
         </div>
@@ -129,7 +129,7 @@
           <h3>Complete dashboard for finance control.</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare</p>
           <div class="hero-btn dashboard-btn">
-            <button>Sign up for a Free Trial</button>
+            <a @click.prevent="$scrollTo('#cta-section')"><button>Sign up for a Free Trial</button></a>
           </div>
         </div>
       </div>
@@ -158,7 +158,7 @@
               <div class="perk"><g-image src="~/assets/images/check-icon.png"></g-image> Accounts Payable</div>
             </div>
             <div class="hero-btn card-btn">
-              <button>Sign up for a Free Trial</button>
+              <a @click.prevent="$scrollTo('#cta-section')"><button>Sign up for a Free Trial</button></a>
             </div>  
           </div>
         </div>
@@ -182,7 +182,7 @@
               <div class="perk"><g-image src="~/assets/images/check-icon.png"></g-image> Accounts Payable</div>
             </div>
             <div class="hero-btn card-btn">
-              <button>Sign up for a Free Trial</button>
+              <a @click.prevent="$scrollTo('#cta-section')"><button>Sign up for a Free Trial</button></a>
             </div>
         </div>
 
@@ -204,7 +204,7 @@
               <div class="perk"><g-image src="~/assets/images/check-icon.png"></g-image> Accounts Payable</div>
             </div>
             <div class="hero-btn card-btn">
-              <button>Sign up for a Free Trial</button>
+              <a @click.prevent="$scrollTo('#cta-section')"><button>Sign up for a Free Trial</button></a>
             </div>
           </div>
         </div>
@@ -219,7 +219,7 @@
           <h3>"Cardly has helped reduce our fees by over 17%"</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
           <div class="hero-btn dashboard-btn">
-            <button>Request a demo</button>
+            <a @click.prevent="$scrollTo('#cta-section')"><button>Request a demo</button></a>
           </div>
         </div>
       </div>
@@ -227,128 +227,23 @@
    <section id="faqs">
      <div class="faqs-wrapper">
       <h3>Frequently Asked Questions</h3>
-      
-      <div class="faqs-halves">
-        <div class="faqs-left">
-          <div role="tablist">
-            <!-- QUESTION 1 -->
-            <div class="question-wrapper">
-            <div role="tab">
-              <div block href="#" v-b-toggle.accordion-1 class="acc-btn">
-                <div class="plus-toggle"><g-image src="~/assets/images/plus-symbol.svg"></g-image></div> <div class="acc-question">{{ faqs[0].question }}</div></div>
-            </div>
-              <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
-              <div>
-                <div class="faq-content">
-                  <p>{{ faqs[0].answer }}</p>
-                </div>
-              </div>
-              </b-collapse>
-            </div>
-            <!-- QUESTION 2 -->
-            <div class="question-wrapper">
-            <div role="tab">
-              <div block href="#" v-b-toggle.accordion-2 class="acc-btn">
-                <div class="plus-toggle"><g-image src="~/assets/images/plus-symbol.svg"></g-image></div> <div class="acc-question">{{ faqs[1].question }}</div></div>
-            </div>
-              <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
-              <div>
-                <div class="faq-content">
-                  <p>{{ faqs[1].answer }}</p>
-                </div>
-              </div>
-              </b-collapse>
-            </div>
-            <!-- QUESTION 3 -->
-            <div class="question-wrapper">
-            <div role="tab">
-              <div block href="#" v-b-toggle.accordion-3 class="acc-btn">
-                <div class="plus-toggle"><g-image src="~/assets/images/plus-symbol.svg"></g-image></div> <div class="acc-question">{{ faqs[2].question }}</div></div>
-            </div>
-              <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
-              <div>
-                <div class="faq-content">
-                  <p>{{ faqs[2].answer }}</p>
-                </div>
-              </div>
-              </b-collapse>
-            </div>
-            <!-- QUESTION 4 -->
-            <div class="question-wrapper">
-            <div role="tab">
-              <div block href="#" v-b-toggle.accordion-4 class="acc-btn">
-                <div class="plus-toggle"><g-image src="~/assets/images/plus-symbol.svg"></g-image></div> <div class="acc-question">{{ faqs[3].question }}</div></div>
-            </div>
-              <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
-              <div>
-                <div class="faq-content">
-                  <p>{{ faqs[3].answer }}</p>
-                </div>
-              </div>
-              </b-collapse>
-            </div>
+        <div class="faqs-halves">
+           <div class="faqs-left"> 
+            <Faqs question="How can we get funding for our startup?">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</Faqs>
+            <Faqs question="Can I make extra payments on my car loan?">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</Faqs>
+            <Faqs question="I am looking for a particular form, where can I find it?">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</Faqs>
+            <Faqs question="What documentation is required when applying?">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</Faqs>
+          </div>
+          <div class="faqs-right">
+            <Faqs question="What do I do if my financial situation changes?">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</Faqs>
+            <Faqs question="Are you based in Australia?">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</Faqs>
+            <Faqs question="Who founded the company?">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</Faqs>
+            <Faqs question="I'm self-employed and am unable to provide pay slips?">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</Faqs>
           </div>
         </div>
-        <!-- QUESTION 5 -->
-        <div class="faqs-right">
-          <div class="question-wrapper">
-            <div role="tab">
-              <div block href="#" v-b-toggle.accordion-5 class="acc-btn">
-                <div class="plus-toggle"><g-image src="~/assets/images/plus-symbol.svg"></g-image></div> <div class="acc-question">{{ faqs[4].question }}</div></div>
-            </div>
-              <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
-              <div>
-                <div class="faq-content">
-                  <p>{{ faqs[4].answer }}</p>
-                </div>
-              </div>
-              </b-collapse>
-            </div>
-            <!-- QUESTION 6 -->
-            <div class="question-wrapper">
-            <div role="tab">
-              <div block href="#" v-b-toggle.accordion-6 class="acc-btn">
-                <div class="plus-toggle"><g-image src="~/assets/images/plus-symbol.svg"></g-image></div> <div class="acc-question">{{ faqs[5].question }}</div></div>
-            </div>
-              <b-collapse id="accordion-6" accordion="my-accordion" role="tabpanel">
-              <div>
-                <div class="faq-content">
-                  <p>{{ faqs[5].answer }}</p>
-                </div>
-              </div>
-              </b-collapse>
-            </div>
-            <!-- QUESTION 7 -->
-            <div class="question-wrapper">
-            <div role="tab">
-              <div block href="#" v-b-toggle.accordion-7 class="acc-btn">
-                <div class="plus-toggle"><g-image src="~/assets/images/plus-symbol.svg"></g-image></div> <div class="acc-question">{{ faqs[6].question }}</div></div>
-            </div>
-              <b-collapse id="accordion-7" accordion="my-accordion" role="tabpanel">
-              <div>
-                <div class="faq-content">
-                  <p>{{ faqs[6].answer }}</p>
-                </div>
-              </div>
-              </b-collapse>
-            </div>
-            <!-- QUESTION 8 -->
-            <div class="question-wrapper">
-            <div role="tab">
-              <div block href="#" v-b-toggle.accordion-8 class="acc-btn">
-                <div class="plus-toggle"><g-image src="~/assets/images/plus-symbol.svg"></g-image></div> <div class="acc-question">{{ faqs[7].question }}</div></div>
-            </div>
-              <b-collapse id="accordion-8" accordion="my-accordion" role="tabpanel">
-              <div>
-                <div class="faq-content">
-                  <p>{{ faqs[7].answer }}</p>
-                </div>
-              </div>
-              </b-collapse>
-            </div>
-        </div>
-      </div>
      </div>
+     
+     
    </section>
    <section id="cta-section">
      <div class="cta-wrapper">
@@ -368,48 +263,15 @@
 </template>
 
 <script>
+import Faqs from '~/components/Faqs.vue'
+
 export default {
   metaInfo: {
     title: 'Cardly | Gridsome',
     titleTemplate: '%s'
   },
-  data() {
-    return {
-      faqs: [
-        {
-          question: "How can we get funding for our start up?",
-          answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
-        },
-        {
-          question: "Can I make extra payments on my car loan?",
-          answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
-        },
-        {
-          question: "I am looking for a particular form, where can I find it?",
-          answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
-        },
-        {
-          question: "What documentation is required when applying?",
-          answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
-        },
-        {
-          question: "What do I do if my financial situation changes?",
-          answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
-        },
-        {
-          question: "Are you based in Australia?",
-          answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
-        },
-        {
-          question: "Who founded the company?",
-          answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
-        },
-        {
-          question: "I'm self employed and am unable to provide pay slips?",
-          answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
-        }
-      ]
-    }
+  components: {
+    Faqs
   }
 }
 </script>
@@ -501,6 +363,9 @@ h5 {
   text-align: center;
   border: none;
   color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .hero-btn button:hover {
@@ -809,6 +674,10 @@ h5 {
   margin-right: 20px;
 }
 
+.card-btn a {
+  width: 100%;
+}
+
 .card-btn button {
   width: 100%;
   justify-content: center;
@@ -827,36 +696,20 @@ h5 {
   margin: 0 auto;
 }
 
+.faqs-wrapper h3 {
+  margin-bottom: 60px;
+}
+
 .faqs-halves {
   display: flex;
 }
 
 .faqs-left, .faqs-right {
   flex: 1;
-  padding-right: 30px;
 }
 
 .faqs-left {
-  margin-right: 16px;
-}
-
-.faqs-wrapper h3 {
-  margin-bottom: 60px;
-}
-
-.question-wrapper {
-  margin-bottom: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-}
-
-.acc-btn {
-  padding: 12px 15px 12px 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  margin-right: 50px;
 }
 
 .acc-btn[aria-expanded="true"] .plus-toggle img{
@@ -884,39 +737,6 @@ h5 {
   -moz-transition-property: -moz-transform;
   -o-transition-property: -o-transform;
   transition-property: transform;
-}
-
-.acc-btn:not(:disabled):not(.disabled):active {
-  background: none;
-  border: none;
-}
-
-.acc-question {
-  color: #2e2e3d;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.plus-toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 35px;
-  height: 35px;
-  margin-right: 20px;
-  padding: 8px;
-  border-radius: 8px;
-  background-color: #e8faf7;
-}
-
-.faq-content {
-  color: #7e828f;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.faq-content p {
-  margin-bottom: 40px;
 }
 /*----- CTA SECTION -----*/
 #cta-section {
@@ -1027,9 +847,13 @@ h5 {
     margin-bottom: 36px;
   }
   
-  #expenses, #platform, #smarter, #dashboard  {
+  #expenses, #platform, #smarter, #dashboard, #faqs  {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+
+  .faqs-wrapper h3 {
+    margin-top: 0;
   }
 
   .smarter-left {
@@ -1075,7 +899,7 @@ h5 {
     margin: 20px 0 0 0 !important;
   }
 
-  #expenses, #platform, #smarter, #dashboard {
+  #expenses, #platform, #smarter, #dashboard, #testimonial {
     padding-top: 40px;
     padding-bottom: 40px;
   }

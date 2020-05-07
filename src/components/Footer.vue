@@ -15,9 +15,9 @@
                     <div class="footer-col-title">Company</div>
                     <ul class="footer-col-items">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a @click.prevent="$scrollTo('#expenses')">Features</a></li>
+                        <li><a @click.prevent="$scrollTo('#choose-plan')">Pricing</a></li>
+                        <li><a @click.prevent="$scrollTo('#cta-section')">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-right-two">
@@ -135,6 +135,8 @@
 
     .footer-col-items li a {
         color: #353448;
+        text-decoration: none;
+        cursor: pointer;
     }
 
     .footer-col-items li a:hover {

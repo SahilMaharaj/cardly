@@ -34,13 +34,13 @@ body {
   line-height: 1.5;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 10px;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
 }
 </style>
