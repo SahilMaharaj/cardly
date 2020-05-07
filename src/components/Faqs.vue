@@ -59,7 +59,7 @@
     }
 
     .accordion.active .acc-answer{
-        max-height: 10em;
+        max-height: 12em;
         padding-bottom: 40px;
     }
 
@@ -105,4 +105,11 @@
         border-radius: 8px;
         background-color: #e8faf7;
     }
+    @media only screen and (max-width: 991px) {
+        .accordion.active .acc-answer {
+            margin-bottom: 20px;
+        }
+    }
+
+    
 </style>
