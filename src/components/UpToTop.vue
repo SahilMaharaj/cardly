@@ -3,7 +3,6 @@
         <transition name="back-to-top-fade">
     <div 
       class="vue-back-to-top" 
-      :style="`bottom:${this.bottom};right:${this.right};`" 
       v-show="visible" 
       @click="backToTop">
       <slot>
@@ -32,14 +31,6 @@
             visibleoffsetbottom: {
                 type: [String, Number],
                 default: 0,
-            },
-            right: {
-                type: String,
-                default: '30px',
-            },
-            bottom: {
-                type: String,
-                default: '40px',
             },
             scrollFn: {
                 type: Function,
@@ -100,6 +91,8 @@
     .vue-back-to-top {
         cursor:pointer;
         position: fixed;
+        bottom: 40px;
+        right: 30px;
         z-index: 1000;
     }
 
