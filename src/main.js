@@ -1,5 +1,6 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
+import vueBacktopPack from 'vue-backtop-pack'
 
 
 export default function (Vue, { router, head, isClient }) {
@@ -7,6 +8,7 @@ export default function (Vue, { router, head, isClient }) {
     duration: 1500,
     easing: "ease-in-out"
   })
+  Vue.use(vueBacktopPack)
   Vue.component('Layout', DefaultLayout)
   head.link.push ({
     rel: 'stylesheet preload',
