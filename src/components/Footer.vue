@@ -14,7 +14,7 @@
                 <div class="footer-right-one">
                     <div class="footer-col-title">Company</div>
                     <ul class="footer-col-items">
-                        <li><a href="#">Home</a></li>
+                        <li>Home</li>
                         <li><a @click.prevent="$scrollTo('#expenses')">Features</a></li>
                         <li><a @click.prevent="$scrollTo('#choose-plan')">Pricing</a></li>
                         <li><a @click.prevent="$scrollTo('#cta-section')">Contact</a></li>
