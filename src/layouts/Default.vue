@@ -2,7 +2,7 @@
   <div>
     <Header />
     <slot/>
-    <Scroller />
+    <BackToTop />
     <Footer />
   </div>
 </template>
@@ -18,13 +18,13 @@ query {
 <script>
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
-import Scroller from '~/components/Scroller.vue'
+import BackToTop from '~/components/BackToTop.vue'
 
   export default {
     components: {
       Header,
       Footer,
-      Scroller
+      BackToTop
     }
   }
 </script>
