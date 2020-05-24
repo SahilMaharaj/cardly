@@ -2,6 +2,7 @@
   <div>
     <Header />
     <slot/>
+    <Scroller />
     <Footer />
   </div>
 </template>
@@ -17,13 +18,15 @@ query {
 <script>
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
+import Scroller from '~/components/Scroller.vue'
 
-export default {
-  components: {
-    Header,
-    Footer
+  export default {
+    components: {
+      Header,
+      Footer,
+      Scroller
+    }
   }
-}
 </script>
 
 <style>

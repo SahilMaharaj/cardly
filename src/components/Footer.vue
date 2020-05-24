@@ -43,12 +43,6 @@
     </div>
 </template>
 
-<script>
-    export default {
-        
-    }
-</script>
-
 <style scoped>
     .footer {
         padding: 100px 3% 60px;
@@ -151,7 +145,7 @@
         border-top: 1px solid rgba(0, 0, 0, 0.07);
         font-size: 15px;
     }
-    /*----- MEDIA QUERIES -----*/
+     /*----- MEDIA QUERIES -----*/
     @media only screen and (max-width: 767px) {
         .footer-wrapper {
             flex-direction: column;

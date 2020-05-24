@@ -1,6 +1,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
 
+
 export default function (Vue, { router, head, isClient }) {
   Vue.use(VueScrollTo, {
     duration: 1500,
