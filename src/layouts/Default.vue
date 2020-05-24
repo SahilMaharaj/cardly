@@ -2,6 +2,7 @@
   <div>
     <Header />
     <slot/>
+    <back-to-top class="btt-btn" visibleoffset="200"><g-image src="~/assets/images/chevron.png"></g-image></back-to-top>
     <Footer />
   </div>
 </template>
@@ -42,5 +43,15 @@ p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 10px;
+}
+
+.btt-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #19ceaf;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
 }
 </style>

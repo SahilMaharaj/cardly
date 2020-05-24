@@ -20,18 +20,12 @@
                     <span>&#9776;</span>
                 </label>
                 <div class="header-cta-btn">
-                    <a class="header-cta" href="#">Contact Us</a>
+                    <a @click.prevent="$scrollTo('#cta-section')" class="header-cta" href="#">Contact Us</a>
                 </div>
             </header>
         </div>
     </div>
 </template>
-
-<script>
-    export default {
-        
-    }
-</script>
 
 <style scoped>
 /*----- DESKTOP -----*/

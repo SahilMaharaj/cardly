@@ -11,7 +11,7 @@
           </div>
         </div>
         <div class="hero-right">
-          <g-image src="~/assets/images/hero-animated-image.png"></g-image>
+          <g-image src="~/assets/images/hero-animated.png"></g-image>
         </div>
       </div>
       <g-image class="hero-design" src="~/assets/images/hero-design.svg"></g-image>
