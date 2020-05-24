@@ -2,7 +2,6 @@
   <div>
     <Header />
     <slot/>
-    <back-to-top class="btt-btn" visibleoffset="200"><g-image src="~/assets/images/chevron.png"></g-image></back-to-top>
     <Footer />
   </div>
 </template>
