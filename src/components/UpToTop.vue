@@ -8,7 +8,7 @@
       <slot>
         <div class="default">
           <span>
-            {{ text }}
+            <g-image src="~/assets/images/chevron.png"></g-image>
           </span>
         </div>
       </slot>
@@ -20,10 +20,6 @@
 <script>
     export default {
         props: {
-            text: {
-                type: String,
-                default: 'Scroll Up',
-            },
             visibleoffset: {
                 type: [String, Number],
                 default: 200,
@@ -78,7 +74,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     .back-to-top-fade-enter-active, 
     .back-to-top-fade-leave-active {
         transition: opacity .7s;
@@ -92,27 +88,17 @@
         cursor:pointer;
         position: fixed;
         bottom: 40px;
-        right: 30px;
+        right: 25px;
         z-index: 1000;
     }
 
     .vue-back-to-top .default {
-        background-color: #f5c85c;
-        border-radius: 3px;
-        color: #ffffff;
-        height: 30px;
-        line-height: 30px;
-        text-align: center;
-        width: 160px;
-    }
-
-    .vue-back-to-top .default span{
-        color:#ffffff;
-    }
-
-    .vue-back-to-top--is-footer {
-        bottom: 50% !important;
-        position: absolute;
-        transform: translateY(50%);
+        background-color: #19ceaf;
+        border-radius: 100px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
