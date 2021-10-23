@@ -666,6 +666,8 @@ h5 {
 }
 
 .perk {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   margin-bottom: 16px;
 }
@@ -797,9 +799,7 @@ h5 {
 }
 /*----- MEDIA QUERIES -----*/
 @media only screen and (max-width: 991px) {
-  .spacing {
-    padding: 100px 20px !important;
-  }
+
 
   .hero-design {
     display: none;
@@ -915,6 +915,10 @@ h5 {
 }
 
 @media only screen and (max-width: 479px) {
+  #hero {
+    padding: 0px 20px 100px 20px !important;
+  }
+  
   .pricing-card {
     padding-left: 20px;
     padding-right: 20px;
